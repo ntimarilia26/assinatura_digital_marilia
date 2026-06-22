@@ -78,13 +78,13 @@ input[value="default"] + label {
         <h2>1. Preencha seus dados</h2>
         
         <label for="name">Nome Completo:</label>
-        <input type="text" id="name" placeholder="Ex: Thomas Henrique" oninput="updateSignature()">
+        <input type="text" id="name" placeholder="Ex: Layz da Silva" oninput="updateSignature()">
 
         <label for="sectorEnd">Setor:</label>
-        <input type="text" id="sectorEnd" placeholder="Ex: NTI | Sesc Franca" oninput="updateSignature()">
+        <input type="text" id="sectorEnd" placeholder="Ex: NTI | Sesc Marilia" oninput="updateSignature()">
 
         <label for="phoneEnd">Últimos 4 dígitos do telefone:</label>
-        <input type="text" id="phoneEnd" maxlength="4" placeholder="Ex: 7604"oninput="updateSignature()">
+        <input type="text" id="phoneEnd" maxlength="4" placeholder="Ex: 7600"oninput="updateSignature()">
         
         <button onclick="copySignature()">Copiar Assinatura</button>
         <p class="copy-success" id="msgSuccess">Copiado! Agora cole nas configurações do seu e-mail.</p>
@@ -101,10 +101,10 @@ input[value="default"] + label {
                         <img src="https://raw.githubusercontent.com/uo54franca/Assinatura/main/assinatura_email_80_anos_JPG.jpg" alt="Sesc Senac Fecomercio" width="200" style="display: block; border: 0; height: auto;">
                     </td>
                     <td style="border-left: 1px solid #333333; padding-left: 15px; vertical-align: middle;">
-                        <strong style="font-size: 14px; color: #000000;" class="sig-name">Thomas Henrique</strong><br>
+                        <strong style="font-size: 14px; color: #000000;" class="sig-name">Laiz da Silva</strong><br>
                         <span style="font-size: 13px; color: #333333;" class="sig-sector">NTI</span><br>
-                        <span style="font-size: 13px; color: #333333;">Tel.: <span class="sig-phone">+55 16 3112 7604</span></span><br>
-                        <a href="https://sescsp.org.br/franca" class="sig-site-link" style="font-size: 13px; color: #000000; text-decoration: underline;">sescsp.org.br/franca</a>
+                        <span style="font-size: 13px; color: #333333;">Tel.: <span class="sig-phone">+55 14 3112 7600</span></span><br>
+                        <a href="https://sescsp.org.br/Marilia" class="sig-site-link" style="font-size: 13px; color: #000000; text-decoration: underline;">sescsp.org.br/Marilia</a>
                     </td>
                 </tr>
             </table>
@@ -117,16 +117,16 @@ input[value="default"] + label {
                         <img src="https://raw.githubusercontent.com/uo54franca/Assinatura/main/assinatura_email_80_anos_JPG.jpg" alt="Sesc Senac Fecomercio" width="240" style="display: block; border: 0; height: auto;">
                     </td>
                     <td style="border-left: 1px solid #333333; padding-left: 15px; vertical-align: top; padding-top: 5px;">
-                        <strong style="font-size: 14px; color: #000000;" class="sig-name">Thomas Henrique</strong><br>
-                        <span style="font-size: 13px; color: #333333;" class="sig-sector">NTI | Sesc Franca</span><br>
+                        <strong style="font-size: 14px; color: #000000;" class="sig-name">Laiz da Silva</strong><br>
+                        <span style="font-size: 13px; color: #333333;" class="sig-sector">NTI | Sesc Marilia</span><br>
                         <span style="font-size: 13px; color: #333333;">Tel.: <span class="sig-phone">+55 16 3112 7604</span></span><br>
-                        <a href="https://sescsp.org.br/franca" class="sig-site-link" style="font-size: 13px; color: #000000; text-decoration: underline;">sescsp.org.br/franca</a><br>
+                        <a href="https://sescsp.org.br/Marilia" class="sig-site-link" style="font-size: 13px; color: #000000; text-decoration: underline;">sescsp.org.br/Marilia</a><br>
                         
                         <div style="padding-top: 10px;">
-                            <a href="http://www.facebook.com/sescfrancasp" target="_blank" style="text-decoration: none; margin-right: 8px;">
+                            <a href="http://www.facebook.com/sescMariliasp" target="_blank" style="text-decoration: none; margin-right: 8px;">
                                 <img src="https://cdn-icons-png.flaticon.com/512/20/20673.png" width="22" height="22" alt="FB" style="border:0; display:inline-block;">
                             </a>
-                            <a href="https://www.instagram.com/sescfranca/" target="_blank" style="text-decoration: none;">
+                            <a href="https://www.instagram.com/sescMarilia/" target="_blank" style="text-decoration: none;">
                                 <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png" width="22" height="22" alt="IG" style="border:0; display:inline-block;">
                             </a>
                         </div>
@@ -163,13 +163,13 @@ function updateSignature() {
     const sectorEnd = document.getElementById('sectorEnd').value || 'Setor ';
 
     // Setor final (igual ao conceito do telefone)
-    const sector = `${sectorEnd} | Sesc Franca`;
+    const sector = `${sectorEnd} | Sesc Marilia`;
 
     // Últimos 4 dígitos digitados pelo usuário
     const phoneEnd = document.getElementById('phoneEnd').value || '0000';
 
     // Telefone fixo institucional
-    const fullPhone = `+55 16 3112-${phoneEnd}`;
+    const fullPhone = `+55 14 3112-${phoneEnd}`;
 
     document.querySelectorAll('.sig-name').forEach(el => {
         el.innerText = name;
